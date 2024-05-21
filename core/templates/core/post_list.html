@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+hi
+    <ul>
+     {% for post in post %}
+       <li>
+           {{post.title}} - {{post.content}}
+       </li>
+     {% endfor %}
+    </ul>
+</body>
+</html>
