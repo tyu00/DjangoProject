@@ -10,7 +10,6 @@ class User(models.Model):
     avatar = models.ImageField('автарка', upload_to='avatars', null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    is_rare = models.BooleanField(default=False)
 
     class Meta:
         verbose_name = 'Пользователь'
@@ -27,7 +26,6 @@ class Post(models.Model):
     image = models.ImageField(upload_to='posts', null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    is_rare = models.BooleanField(default=False)
 
     class Meta:
         verbose_name = 'Пост'

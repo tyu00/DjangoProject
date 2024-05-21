@@ -29,7 +29,7 @@ class Userlist(ListView):
 class Postlist(ListView):
     model = models.Post
     context_object_name = "post"
-    template_name = 'core/post_list.html'
+    template_name = 'core/_list.html'
 
 
 class Redirect(RedirectView):
