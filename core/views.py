@@ -1,5 +1,4 @@
-from django.http import HttpResponse
-from datetime import datetime
+
 
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView, RedirectView
@@ -35,4 +34,3 @@ class Postlist(ListView):
 class Redirect(RedirectView):
     query_string = True
     url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUYTmV2ZXIgR29ubmEgR2l2ZSBZb3UgVXAu'
-
