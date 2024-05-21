@@ -36,7 +36,3 @@ class Redirect(RedirectView):
     query_string = True
     url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUYTmV2ZXIgR29ubmEgR2l2ZSBZb3UgVXAu'
 
-
-def current_datetime(request):
-    now = datetime.now()
-    return HttpResponse(f"Текущая дата и время: {now.strftime('%Y-%m-%d %H:%M:%S')}")

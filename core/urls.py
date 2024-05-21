@@ -7,5 +7,4 @@ urlpatterns = [
     path('user/', views.Userlist.as_view(), name='user'),
     path('post/', views.Postlist.as_view(), name='post'),
     path('redirect/', views.Redirect.as_view(), name='redirect'),
-    path('datetime/', views.current_datetime, name='datetime'),
 ]
